@@ -1,0 +1,136 @@
+<!-- <style>
+    .all {
+        justify-content: center;
+        display: flex;
+        position: relative;
+    }
+    
+    .loader {
+        position: absolute;
+        border-radius: 50%;
+        border: 5px solid #ffbe2f;
+        border-bottom: 5px solid transparent;
+        aspect-ratio: 1;
+        animation: load 4s ease-in-out 0ms infinite;
+    }
+    
+    @keyframes load {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(720deg);
+        }
+    }
+    
+    .loader-1 {
+        width: 250px;
+        height: 250px;
+        animation-direction: normal;
+        top: 20px;
+        margin: 10%;
+    }
+    
+    .loader-2 {
+        width: 200px;
+        height: 200px;
+        animation-direction: reverse;
+        margin: 10%;
+        top: 40px;
+    }
+    
+    .loader-3 {
+        width: 150px;
+        height: 150px;
+        animation-direction: normal;
+        top: 60px;
+        margin: 10%;
+    }
+    
+    .loader-4 {
+        width: 100px;
+        height: 100px;
+        animation-direction: reverse;
+        top: 80px;
+        margin: 10%;
+    }
+    
+    .loader-5 {
+        width: 50px;
+        height: 50px;
+        animation-direction: normal;
+        top: 100px;
+        margin: 10%;
+    }
+</style>
+
+<div class="all">
+
+    <div class="loader loader-1"></div>
+    <div class="loader loader-2"></div>
+    <div class="loader loader-3"></div>
+    <div class="loader loader-4"></div>
+    <div class="loader loader-5"></div>
+</div> -->
+
+<style>
+    nav {
+        background: #232530;
+    }
+    
+    .ham-menu {
+        width: 100px;
+        height: 500px;
+        position: relative;
+    }
+    
+    .ham-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: rgb(85, 85, 247);
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: .3 ease;
+    }
+    
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+    
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+    
+    .ham-menu:active span:nth-child(1) {
+        top: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    
+    .ham-menu:active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .ham-menu:active span:nth-child(3) {
+        top: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+</style>
+<nav>
+    <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<script>
+    const hamMenu = document.querySelector('.ham-menu');
+    hamMenu.addEventListener('click', () => {
+        hamMenu.classList.toggle('active');
+    })
+</script>

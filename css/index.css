@@ -1,0 +1,913 @@
+.slideImage {
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.slide {
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: all 0.1s;
+}
+
+.slideCaptions {
+    content: "";
+    padding-bottom: 200px;
+    color: #000000;
+    font-size: 1.1remx;
+    left: 0;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+div .slideButton {
+    background-color: transparent;
+    width: 25px;
+    height: 30px;
+    color: #ffffff;
+    bottom: 205px;
+    position: relative;
+    border-style: hidden;
+    cursor: pointer;
+}
+
+.slideButton:hover {
+    background-color: rgba(000, 000, 000, 0.5);
+    border-radius: 100px;
+}
+
+.slideButtonRight {
+    left: 93.4%;
+    position: relative;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    box-sizing: border-box;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 900;
+}
+
+.imgInText {
+    margin: 0px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.akwaText {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.histroyText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.facilityText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.coursesText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.GenScienceText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.HomEconsText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.GenArtText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.VirArtText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.activiesText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.ClassSeessionText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.SportText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.AfterClass {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.ClubText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.DramaText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.CaclubText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.CacorpText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.CabandText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.redCrossText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.Houses {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.HUS1BoyText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.HUS1GirlText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.HUS2BoyText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.HUS2GirlText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.HUS3BoyText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.HUS3GirlText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+.HUS4BoyText {
+    float: left;
+    width: 60%;
+    height: 300px;
+}
+
+.HUS4GirlText {
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+
+@media screen and (max-width: 1600px) {
+    .slideImage {
+        width: 100%;
+        height: 400px;
+        display: none;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .slide {
+        width: 100%;
+        height: 400px;
+        margin: 0px;
+        box-sizing: border-box;
+        transition: all 3s;
+    }
+    .slideCaptions {
+        content: "";
+        padding-bottom: 200px;
+        color: #000000;
+        font-size: 1.1remx;
+        left: 0;
+        color: rgb(0, 0, 0);
+        font-weight: 900;
+    }
+    div .slideButton {
+        background-color: transparent;
+        width: 25px;
+        height: 30px;
+        color: #ffffff;
+        bottom: 205px;
+        position: relative;
+        border-style: hidden;
+        cursor: pointer;
+    }
+    .slideButton:hover {
+        background-color: rgba(000, 000, 000, 0.5);
+        border-radius: 100px;
+    }
+    .slideButtonRight {
+        left: 93.4%;
+        position: relative;
+    }
+    p,
+    h1,
+    h2,
+    h3,
+    h4 {
+        box-sizing: border-box;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    h2,
+    h3,
+    h4 {
+        font-weight: 900;
+    }
+    .imgInText {
+        margin: 0px;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+    .akwaText {
+        width: 100%;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    .histroyText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .facilityText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .coursesText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .GenScienceText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .HomEconsText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .GenArtText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .VirArtText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .activiesText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .ClassSeessionText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .SportText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .AfterClass {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .ClubText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .DramaText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .CaclubText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .CacorpText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .CabandText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .redCrossText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .Houses {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .HUS1BoyText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .HUS1GirlText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .HUS2BoyText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .HUS2GirlText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .HUS3BoyText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .HUS3GirlText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+    .HUS4BoyText {
+        float: left;
+        width: 60%;
+        height: 300px;
+    }
+    .HUS4GirlText {
+        float: right;
+        width: 60%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .slideImage {
+        width: 100%;
+        height: 200px;
+        display: none;
+    }
+    .slide {
+        width: 100%;
+        height: 200px;
+        margin: 0px;
+        box-sizing: border-box;
+        transition: all 3s;
+    }
+    div .slideButton {
+        background-color: transparent;
+        width: 25px;
+        height: 30px;
+        color: #5ef072;
+        background-color: transparent;
+        bottom: 110px;
+        position: relative;
+        border-style: hidden;
+    }
+    .slideButtonRight {
+        left: 83%;
+        position: relative;
+    }
+    .imgInText {
+        margin: 0px;
+        box-sizing: border-box;
+        margin: 0px;
+        height: 300px;
+    }
+    .akwaText {
+        width: 100%;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    .histroyText {
+        width: 100%;
+    }
+    .facilityText {
+        width: 100%;
+    }
+    .coursesText {
+        width: 100%;
+        height: 300px;
+    }
+    .GenScienceText {
+        width: 100%;
+    }
+    .HomEconsText {
+        width: 100%;
+    }
+    .GenArtText {
+        width: 100%;
+    }
+    .VirArtText {
+        width: 100%;
+    }
+    .activiesText {
+        width: 100%;
+    }
+    .ClassSeessionText {
+        width: 100%;
+    }
+    .SportText {
+        width: 100%;
+    }
+    .AfterClass {
+        width: 100%;
+    }
+    .ClubText {
+        width: 100%;
+    }
+    .DramaText {
+        width: 100%;
+    }
+    .CaclubText {
+        width: 100%;
+    }
+    .CacorpText {
+        width: 100%;
+    }
+    .CabandText {
+        width: 100%;
+    }
+    .redCrossText {
+        width: 100%;
+    }
+    .Houses {
+        width: 100%;
+    }
+    .HUS1BoyText {
+        width: 100%;
+    }
+    .HUS1GirlText {
+        width: 100%;
+    }
+    .HUS2BoyText {
+        width: 100%;
+    }
+    .HUS2GirlText {
+        width: 100%;
+    }
+    .HUS3BoyText {
+        width: 100%;
+    }
+    .HUS3GirlText {
+        width: 100%;
+    }
+    .HUS4BoyText {
+        width: 100%;
+    }
+    .HUS4GirlText {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .slideImage {
+        width: 100%;
+        height: 200px;
+        display: none;
+    }
+    .slide {
+        width: 100%;
+        height: 200px;
+        margin: 0px;
+        box-sizing: border-box;
+        transition: all 3s;
+    }
+    div .slideButton {
+        background-color: transparent;
+        width: 25px;
+        height: 30px;
+        color: #5ef072;
+        background-color: transparent;
+        bottom: 110px;
+        position: relative;
+        border-style: hidden;
+    }
+    .slideButtonRight {
+        left: 83%;
+        position: relative;
+    }
+    .imgInText {
+        margin: 0px;
+        box-sizing: border-box;
+        margin: 0px;
+        height: 300px;
+    }
+    .akwaText {
+        width: 100%;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    .histroyText {
+        width: 100%;
+    }
+    .facilityText {
+        width: 100%;
+    }
+    .coursesText {
+        width: 100%;
+        height: 300px;
+    }
+    .GenScienceText {
+        width: 100%;
+    }
+    .HomEconsText {
+        width: 100%;
+    }
+    .GenArtText {
+        width: 100%;
+    }
+    .VirArtText {
+        width: 100%;
+    }
+    .activiesText {
+        width: 100%;
+    }
+    .ClassSeessionText {
+        width: 100%;
+    }
+    .SportText {
+        width: 100%;
+    }
+    .AfterClass {
+        width: 100%;
+    }
+    .ClubText {
+        width: 100%;
+    }
+    .DramaText {
+        width: 100%;
+    }
+    .CaclubText {
+        width: 100%;
+    }
+    .CacorpText {
+        width: 100%;
+    }
+    .CabandText {
+        width: 100%;
+    }
+    .redCrossText {
+        width: 100%;
+    }
+    .Houses {
+        width: 100%;
+    }
+    .HUS1BoyText {
+        width: 100%;
+    }
+    .HUS1GirlText {
+        width: 100%;
+    }
+    .HUS2BoyText {
+        width: 100%;
+    }
+    .HUS2GirlText {
+        width: 100%;
+    }
+    .HUS3BoyText {
+        width: 100%;
+    }
+    .HUS3GirlText {
+        width: 100%;
+    }
+    .HUS4BoyText {
+        width: 100%;
+    }
+    .HUS4GirlText {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .slideImage {
+        width: 100%;
+        height: 200px;
+        display: none;
+    }
+    .slide {
+        width: 100%;
+        height: 200px;
+        margin: 0px;
+        box-sizing: border-box;
+        transition: all 3s;
+    }
+    div .slideButton {
+        background-color: transparent;
+        width: 25px;
+        height: 30px;
+        color: #5ef072;
+        background-color: transparent;
+        bottom: 110px;
+        position: relative;
+        border-style: hidden;
+    }
+    .slideButtonRight {
+        left: 83%;
+        position: relative;
+    }
+    .imgInText {
+        margin: 0px;
+        box-sizing: border-box;
+        margin: 0px;
+        height: 300px;
+    }
+    .akwaText {
+        width: 100%;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    .histroyText {
+        width: 100%;
+    }
+    .facilityText {
+        width: 100%;
+    }
+    .coursesText {
+        width: 100%;
+        height: 300px;
+    }
+    .GenScienceText {
+        width: 100%;
+    }
+    .HomEconsText {
+        width: 100%;
+    }
+    .GenArtText {
+        width: 100%;
+    }
+    .VirArtText {
+        width: 100%;
+    }
+    .activiesText {
+        width: 100%;
+    }
+    .ClassSeessionText {
+        width: 100%;
+    }
+    .SportText {
+        width: 100%;
+    }
+    .AfterClass {
+        width: 100%;
+    }
+    .ClubText {
+        width: 100%;
+    }
+    .DramaText {
+        width: 100%;
+    }
+    .CaclubText {
+        width: 100%;
+    }
+    .CacorpText {
+        width: 100%;
+    }
+    .CabandText {
+        width: 100%;
+    }
+    .redCrossText {
+        width: 100%;
+    }
+    .Houses {
+        width: 100%;
+    }
+    .HUS1BoyText {
+        width: 100%;
+    }
+    .HUS1GirlText {
+        width: 100%;
+    }
+    .HUS2BoyText {
+        width: 100%;
+    }
+    .HUS2GirlText {
+        width: 100%;
+    }
+    .HUS3BoyText {
+        width: 100%;
+    }
+    .HUS3GirlText {
+        width: 100%;
+    }
+    .HUS4BoyText {
+        width: 100%;
+    }
+    .HUS4GirlText {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .slideImage {
+        width: 100%;
+        height: 200px;
+        display: none;
+    }
+    .slide {
+        width: 100%;
+        height: 200px;
+        margin: 0px;
+        box-sizing: border-box;
+        transition: all 3s;
+    }
+    div .slideButton {
+        background-color: transparent;
+        width: 25px;
+        height: 30px;
+        color: #5ef072;
+        background-color: transparent;
+        bottom: 110px;
+        position: relative;
+        border-style: hidden;
+    }
+    .slideButtonRight {
+        left: 83%;
+        position: relative;
+    }
+    .imgInText {
+        margin: 0px;
+        box-sizing: border-box;
+        margin: 0px;
+        height: 300px;
+    }
+    .akwaText {
+        width: 100%;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    .histroyText {
+        width: 100%;
+    }
+    .facilityText {
+        width: 100%;
+    }
+    .coursesText {
+        width: 100%;
+        height: 300px;
+    }
+    .GenScienceText {
+        width: 100%;
+    }
+    .HomEconsText {
+        width: 100%;
+    }
+    .GenArtText {
+        width: 100%;
+    }
+    .VirArtText {
+        width: 100%;
+    }
+    .activiesText {
+        width: 100%;
+    }
+    .ClassSeessionText {
+        width: 100%;
+    }
+    .SportText {
+        width: 100%;
+    }
+    .AfterClass {
+        width: 100%;
+    }
+    .ClubText {
+        width: 100%;
+    }
+    .DramaText {
+        width: 100%;
+    }
+    .CaclubText {
+        width: 100%;
+    }
+    .CacorpText {
+        width: 100%;
+    }
+    .CabandText {
+        width: 100%;
+    }
+    .redCrossText {
+        width: 100%;
+    }
+    .Houses {
+        width: 100%;
+    }
+    .HUS1BoyText {
+        width: 100%;
+    }
+    .HUS1GirlText {
+        width: 100%;
+    }
+    .HUS2BoyText {
+        width: 100%;
+    }
+    .HUS2GirlText {
+        width: 100%;
+    }
+    .HUS3BoyText {
+        width: 100%;
+    }
+    .HUS3GirlText {
+        width: 100%;
+    }
+    .HUS4BoyText {
+        width: 100%;
+    }
+    .HUS4GirlText {
+        width: 100%;
+    }
+}

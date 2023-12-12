@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKWAMUMAN SENIOR HIGH SCHOOL</title>
+    <!--personal css-->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="../image/akwamuman-senior-high.png" type="image/x-icon">
+
+    <!--Default css for all-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+    <header>
+        <a href="javascript:void(0)" id="close" onclick="closeNav()">&times;</a>
+        <a style="font-size:30px;cursor:pointer" onclick="openNav()" id="open">&#9776;</a>
+
+        <h1><a href="index.html">AKWAMUMAN SENIOR HIGH SCHOOL</a></h1>
+        <a href="index.html">
+            <img src="../image/akwamuman-senior-high.png" alt="AKWAMUMAN SENIOR HIGH SCHOOL PICTURE" title="AKWAMUMAN SENIOR HIGH SCHOOL BAGDE" class="titlepic">
+        </a>
+        <form class="search" action="/action_page.php">
+            <input type="text " placeholder="Search.. " class="searchbar" name="search">
+            <button type="submit "><i class="fa fa-search "></i></button>
+        </form>
+
+
+
+        <nav>
+            <ul class="Mainnavbar ">
+                <li class="navbar "><a href="index.html">Home</a></li>
+                <li class="navbar "><a href="images.html">Images</a></li>
+                <li class="navbar "><a href="News.html">News</a></li>
+                <li class="navbar "><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div id="moblieNav">
+        <form class="mobile-search" action="/action_page.php">
+            <input type="text " placeholder="Search.. " class="mobile-searchbar" name="search">
+            <button type="submit "><i class="fa fa-search "></i></button>
+        </form>
+        <nav>
+            <ul class="mobile-mainnavbar ">
+                <li class="mobile-navbar "><a href="index.html">Home</a></li>
+                <li class="mobile-navbar "><a href="images.html">Images</a></li>
+                <li class="mobile-navbar "><a href="News.html">News</a></li>
+                <li class="mobile-navbar "><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="Mainactivies ">
+                <li><button class="activies dropbtn" onclick="mobileActiviesDrop()">
+                        Activities &nbsp; <i class="arrow" onclick="mobileActiviesDrop()"></i>
+                    </button>
+                    <div class="dropdown-click dropdown-content dropdown" id="mobileActivies">
+                        <a href="index.html#ClassSession" onclick="classSession()">Class Session</a>
+                        <a href="index.html#Sport" onclick="sport()">Sport</a>
+                        <a href="index.html#AfterClass" onclick="afterClass()">After Class Activities</a>
+                    </div>
+                </li>
+                </li>
+                <li class="activies ">
+                    <button class="activies dropbtn" onclick="mobileClubdrop()">
+                            Clubs &nbsp; <i class="arrow" onclick="mobileClubdrop()"></i>
+                        </button>
+                    <div class="dropdown-click dropdown-content dropdown" id="mobileClubs">
+                        <a href="index.html#Drama" onclick="drama()">Drama Club</a>
+                        <a href="index.html#Cadet" onclick="cadet()">Cadet Club</a>
+                        <a href="index.html#NSMQ" onclick="NSMQ()" title="National Science And Maths Quiz Club">NSMQ Club</a>
+                        <a href="index.html#Dance" onclick="dance()">Dance Crews</a>
+                    </div>
+                </li>
+                <li class="activies ">
+                    <button class="activies dropbtn" onclick="mobileHousedrop()">
+                            Houses &nbsp; <i class="arrow" onclick="mobileHousedrop()"></i>
+                        </button>
+                    <div class="dropdown-click dropdown-content dropdown" id="mobileHouses">
+                        <a href="index.html#HuzOneBoys" onclick="huzOneBoys()">House One (Boys)</a>
+                        <a href="index.html#HuzOneGirls" onclick="huzOneGirls()">House One (Girls)</a>
+                        <a href="index.html#HuzTwoBoys" onclick="huzTwoBoys()">House Two (Boys)</a>
+                        <a href="index.html#HuzTwoGirls" onclick="huzTwoGirls()">House Two (Girls)</a>
+                        <a href="index.html#HuzThreeBoys" onclick="huzThreeBoys()">House Three (Boys)</a>
+                        <a href="index.html#HuzThreeGirls" onclick="huzThreeGirls()">House Three (Girls)</a>
+                        <a href="index.html#HuzFourBoys" onclick="huzFourBoys()">House Four (Boys)</a>
+                        <a href="index.html#HuzFourGirls" onclick="huzFourGirls()">House Four (Girls)</a>
+                    </div>
+                </li>
+                <li class="activies ">
+                    <button class="activies dropbtn" onclick="mobileDepartmentdrop()">
+                            Departments &nbsp; <i class="arrow" onclick="mobileDepartmentdrop()"></i>
+                        </button>
+                    <div class="dropdown-click dropdown-content dropdown" id="mobileDepartment">
+                        <a href="index.html#Science" onclick="science()">General Science</a>
+                        <a href="index.html#HomEcons" onclick="homeEcons()">Home Economics</a>
+                        <a href="index.html#GenArtArt" onclick="generalArt()">General Art</a>
+                        <a href="index.html#VisualArt" onclick="visualArt()">Visual Art</a>
+                        <a href="index.html#Business" onclick="Business()">Business</a>
+                    </div>
+                </li>
+                <li class="activies">
+                    <a href="https://www.gogglemap.com" target="_blank">
+                        <button class="activies dropbtn">
+                                Visit Us
+                        </button>
+                    </a>
+                </li>
+                <li class="people"><a href="students.html" class="people"> Student</a></li>
+                <li class="people"><a href="staff.html" class="people">Staff</a></li>
+                <li class="people"><a href="Oldstudents.html" class="people">Old Student</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="side left ">
+            <nav>
+                <ul class="Mainactivies ">
+                    <li><button class="activies dropbtn" onclick="activiesDrop()">
+                        Activities &nbsp; <i class="arrow" onclick="activiesDrop()"></i>
+                    </button>
+                        <div class="dropdown-click dropdown-content dropdown" id="activies">
+                            <a href="index.html#ClassSession">Class Session</a>
+                            <a href="index.html#Sport">Sport</a>
+                            <a href="index.html#AfterClass">After Class Activities</a>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="activies ">
+                        <button class="activies dropbtn" onclick="clubdrop()">
+                            Clubs &nbsp; <i class="arrow" onclick="clubdrop()"></i>
+                        </button>
+                        <div class="dropdown-click dropdown-content dropdown" id="clubs">
+                            <a href="index.html#Drama">Drama Club</a>
+                            <a href="index.html#Cadet">Cadet Club</a>
+                            <a href="index.html#NSMQ" title="National Science And Maths Quiz">NSMQ Club</a>
+                            <a href="index.html#Dance">Dance Crews</a>
+                        </div>
+                    </li>
+                    <li class="activies ">
+                        <button class="activies dropbtn" onclick="housedrop()">
+                            Houses &nbsp; <i class="arrow" onclick="housedrop()"></i>
+                        </button>
+                        <div class="dropdown-click dropdown-content dropdown" id="houses">
+                            <a href="index.html#HuzOneBoys">House One (Boys)</a>
+                            <a href="index.html#HuzOneGirls">House One (Girls)</a>
+                            <a href="index.html#HuzTwoBoys">House Two (Boys)</a>
+                            <a href="index.html#HuzTwoGirls">House Two (Girls)</a>
+                            <a href="index.html#HuzThreeBoys">House Three (Boys)</a>
+                            <a href="index.html#HuzThreeGirls">House Three (Girls)</a>
+                            <a href="index.html#HuzFourBoys">House Four (Boys)</a>
+                            <a href="index.html#HuzFourGirls">House Four (Girls)</a>
+                        </div>
+                    </li>
+                    <li class="activies ">
+                        <button class="activies dropbtn" onclick="departmentdrop()">
+                            Departments &nbsp; <i class="arrow" onclick="departmentdrop()"></i>
+                        </button>
+                        <div class="dropdown-click dropdown-content dropdown" id="department">
+                            <a href="index.html#Science">General Science</a>
+                            <a href="index.html#HomEcons">Home Economics</a>
+                            <a href="index.html#GenArtArt">General Art</a>
+                            <a href="index.html#VisualArt">Visual Art</a>
+                            <a href="index.html#Business">Business</a>
+
+                        </div>
+                    </li>
+                    <li class="activies">
+                        <a href="https://www.gogglemap.com" target="_blank">
+                            <button class="activies dropbtn">
+                                Visit Us
+                        </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="side right ">
+            <nav>
+                <ul class="MainPeople ">
+                    <li class="people "><a href="students.html"> Student</a></li>
+                    <li class="people "><a href="staff.html">Staff</a></li>
+                    <li class="people "><a href="Oldstudents.html">Old Student</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="center">
+
+            <h2>Old Students</h2>
+            <p>
+                Vero, obcaecati consectetur aspernatur explicabo odit temporibus necessitatibus quas magnam nemo in ipsa praesentium! Totam sunt incidunt vero? Numquam harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis
+                minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis, earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi
+                modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe
+                corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam, laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt
+                qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat
+                ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto
+                cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus
+                harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum
+                illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae quis. Suscipit provident vel tempore quia, at praesentium. Eius aspernatur accusamus aut debitis provident, velit saepe expedita nesciunt enim sunt hic non quia magni,
+                distinctio iusto accusantium laboriosam quod delectus? Impedit. Dignissimos error, sunt perspiciatis iste facere ipsam laudantium, perferendis exercitationem reiciendis dolore ducimus totam! Eveniet quas ipsam rem obcaecati perferendis
+                sint, laboriosam aliquid alias quibusdam minima sed, ut distinctio autem. Doloremque, optio facere rem eos, blanditiis ducimus eligendi ab architecto atque nobis vitae laborum possimus veniam repellendus quas? Rem eligendi consectetur
+                asperiores cumque voluptatem molestiae obcaecati vitae assumenda perferendis quae. Quas voluptatem fuga ut animi nostrum. Porro error est eius similique. Aliquid, harum consectetur sapiente eveniet officiis expedita maiores inventore eligendi
+                laborum amet aspernatur quis, temporibus doloribus placeat incidunt voluptates. Minus nulla mollitia cum dignissimos id atque eligendi iste eius odit cupiditate enim odio pariatur corporis, itaque libero deserunt recusandae ex accusantium
+                voluptates commodi possimus laboriosam? Corporis inventore fugiat explicabo! Doloribus aliquid tenetur repudiandae, omnis ullam recusandae, quibusdam ab officiis, sed vero ea tempore odio fuga! Impedit consequatur dolores praesentium magnam
+                quia. Asperiores voluptate magni ducimus rerum illo, corrupti dignissimos! Perferendis maxime sed distinctio tenetur excepturi neque odit natus provident earum nam pariatur beatae, necessitatibus quas ex enim. Dolore harum voluptates non
+                similique, magnam illum eligendi sequi autem nesciunt quis? Quaerat officia, enim hic culpa quis nihil harum excepturi soluta perspiciatis repellat tempore voluptatem eligendi cumque rerum quas nemo, fuga reprehenderit nostrum porro esse
+                amet sunt ea. Repellendus, pariatur placeat. Id perspiciatis molestiae incidunt quod recusandae! Esse voluptatum quisquam vel tempore ipsum velit omnis inventore accusantium enim numquam saepe est doloremque nesciunt quos, non consequatur
+                quia officiis a expedita corrupti? Facere culpa repellat nisi aliquid recusandae neque possimus dicta tempore, dolorem obcaecati repellendus velit et ducimus odit deserunt amet maxime. Accusantium quas nobis veniam consectetur maiores
+                perspiciatis alias, eum quos?
+
+            </p>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer">
+            <b>Follow Us:</b> Facebook <i class="fab fa-facebook-f"></i><a href="facebook.com">@Ahenemaa</a> &nbsp;&nbsp;Twitter: <i class="fab fa-twitter"></i> <a href="twitter.com">@Ahenemaa</a> &nbsp;&nbsp; <i class="fab fa-email"></i>Email: <a href="mailto:akwamuman-senior-high@gmail.com">akwamuman-senior-high@gmail.com</a>            &nbsp;&nbsp; Contact us &#9742;: 0590000000
+        </div>
+        <div class="media_icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/home.js">
+</script>
+<script src="../javascript/script.js">
+</script>
+
+
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKWAMUMAN SENIOR HIGH SCHOOL</title>
+    <link rel="icon" href="../image/akwamuman-senior-high.png" type="image/x-icon">
+
+    <!--personal css-->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!--Default css for all-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <a href="javascript:void(0)" id="close" onclick="closeNav()">&times;</a>
+        <a style="font-size:30px;cursor:pointer" onclick="openNav()" id="open">&#9776;</a>
+
+        <h1><a href="index.html">AKWAMUMAN SENIOR HIGH SCHOOL</a></h1>
+        <a href="index.html">
+            <img src="../image/akwamuman-senior-high.png" alt="AKWAMUMAN SENIOR HIGH SCHOOL PICTURE" title="AKWAMUMAN SENIOR HIGH SCHOOL BAGDE" class="titlepic">
+        </a>
+
+        <form class="search" action="/action_page.php">
+            <input type="text " placeholder="Search.. " class="searchbar" name="search">
+            <button type="submit "><i class="fa fa-search "></i></button>
+        </form>
+        <nav>
+            <ul class="Mainnavbar ">
+                <li class="navbar "><a href="index.html">Home</a></li>
+                <li class="navbar "><a href="images.html">Images</a></li>
+                <li class="navbar "><a href="News.html">News</a></li>
+                <li class="navbar "><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="moblieNav">
+        <form class="mobile-search" action="/action_page.php">
+            <input type="text " placeholder="Search.. " class="mobile-searchbar" name="search">
+            <button type="submit "><i class="fa fa-search "></i></button>
+        </form>
+        <nav>
+            <ul class="mobile-mainnavbar ">
+                <li class="mobile-navbar "><a href="index.html">Home</a></li>
+                <li class="mobile-navbar "><a href="images.html">Images</a></li>
+                <li class="mobile-navbar "><a href="News.html">News</a></li>
+                <li class="mobile-navbar "><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="Mainactivies ">
+                <li><button class="activies dropbtn" onclick="mobileActiviesDrop()">
+                        Activities &nbsp; <i class="arrow" onclick="mobileActiviesDrop()"></i>
+                    </button>
+                    <div class="dropdown-click dropdown-content dropdown" id="mobileActivies">
+                        <a href="#ClassSession" onclick="classSession()">Class Session</a>
+                        <a href="#Sport" onclick="sport()">Sport</a>
+                        <a href="#AfterClass" onclick="afterClass()">After Class Activities</a>
+                    </div>
+                </li>
+                </li>
+                <li class="activies ">
+                    <button class="activies dropbtn" onclick="mobileClubdrop()">
+                            Clubs &nbsp; <i class="arrow" onclick="mobileClubdrop()"></i>
+                        </button>
+                    <div class="dropdown-click dropdown-content dropdown" id="mobileClubs">
+                        <a href="#Drama" onclick="drama()">Drama Club</a>
+                        <a href="#Cadet" onclick="cadet()">Cadet Club</a>
+                        <a href="#NSMQ" onclick="NSMQ()" title="National Science And Maths Quiz Club">NSMQ Club</a>
+                        <a href="#Dance" onclick="dance()">Dance Crews</a>
+                    </div>
+                </li>
+                <li class="activies ">
+                    <button class="activies dropbtn" onclick="mobileHousedrop()">
+                            Houses &nbsp; <i class="arrow" onclick="mobileHousedrop()"></i>
+                        </button>
+                    <div class="dropdown-click dropdown-content dropdown" id="mobileHouses">
+                        <a href="#HuzOneBoys" onclick="huzOneBoys()">House One (Boys)</a>
+                        <a href="#HuzOneGirls" onclick="huzOneGirls()">House One (Girls)</a>
+                        <a href="#HuzTwoBoys" onclick="huzTwoBoys()">House Two (Boys)</a>
+                        <a href="#HuzTwoGirls" onclick="huzTwoGirls()">House Two (Girls)</a>
+                        <a href="#HuzThreeBoys" onclick="huzThreeBoys()">House Three (Boys)</a>
+                        <a href="#HuzThreeGirls" onclick="huzThreeGirls()">House Three (Girls)</a>
+                        <a href="#HuzFourBoys" onclick="huzFourBoys()">House Four (Boys)</a>
+                        <a href="#HuzFourGirls" onclick="huzFourGirls()">House Four (Girls)</a>
+                    </div>
+                </li>
+                <li class="activies ">
+                    <button class="activies dropbtn" onclick="mobileDepartmentdrop()">
+                            Departments &nbsp; <i class="arrow" onclick="mobileDepartmentdrop()"></i>
+                        </button>
+                    <div class="dropdown-click dropdown-content dropdown" id="mobileDepartment">
+                        <a href="#Science" onclick="science()">General Science</a>
+                        <a href="#HomEcons" onclick="homeEcons()">Home Economics</a>
+                        <a href="#GenArtArt" onclick="generalArt()">General Art</a>
+                        <a href="#VisualArt" onclick="visualArt()">Visual Art</a>
+                        <a href="#Business" onclick="Business()">Business</a>
+                    </div>
+                </li>
+                <li class="activies">
+                    <a href="https://www.gogglemap.com" target="_blank">
+                        <button class="activies dropbtn">
+                                Visit Us
+                        </button>
+                    </a>
+                </li>
+                <li class="people"><a href="students.html" class="people"> Student</a></li>
+                <li class="people"><a href="staff.html" class="people">Staff</a></li>
+                <li class="people"><a href="Oldstudents.html" class="people">Old Student</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="side left ">
+            <nav>
+                <ul class="Mainactivies ">
+                    <li><button class="activies dropbtn" onclick="activiesDrop()">
+                        Activities &nbsp; <i class="arrow" onclick="activiesDrop()"></i>
+                    </button>
+                        <div class="dropdown-click dropdown-content dropdown" id="activies">
+                            <a href="#ClassSession">Class Session</a>
+                            <a href="#Sport">Sport</a>
+                            <a href="#AfterClass">After Class Activities</a>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="activies ">
+                        <button class="activies dropbtn" onclick="clubdrop()">
+                            Clubs &nbsp; <i class="arrow" onclick="clubdrop()"></i>
+                        </button>
+                        <div class="dropdown-click dropdown-content dropdown" id="clubs">
+                            <a href="#Drama">Drama Club</a>
+                            <a href="#Cadet">Cadet Club</a>
+                            <a href="#NSMQ" title="National Science And Maths Quiz Club">NSMQ Club</a>
+                            <a href="#Dance">Dance Crews</a>
+                        </div>
+                    </li>
+                    <li class="activies ">
+                        <button class="activies dropbtn" onclick="housedrop()">
+                            Houses &nbsp; <i class="arrow" onclick="housedrop()"></i>
+                        </button>
+                        <div class="dropdown-click dropdown-content dropdown" id="houses">
+                            <a href="#HuzOneBoys">House One (Boys)</a>
+                            <a href="#HuzOneGirls">House One (Girls)</a>
+                            <a href="#HuzTwoBoys">House Two (Boys)</a>
+                            <a href="#HuzTwoGirls">House Two (Girls)</a>
+                            <a href="#HuzThreeBoys">House Three (Boys)</a>
+                            <a href="#HuzThreeGirls">House Three (Girls)</a>
+                            <a href="#HuzFourBoys">House Four (Boys)</a>
+                            <a href="#HuzFourGirls">House Four (Girls)</a>
+                        </div>
+                    </li>
+                    <li class="activies ">
+                        <button class="activies dropbtn" onclick="departmentdrop()">
+                            Departments &nbsp; <i class="arrow" onclick="departmentdrop()"></i>
+                        </button>
+                        <div class="dropdown-click dropdown-content dropdown" id="department">
+                            <a href="#Science">General Science</a>
+                            <a href="#HomEcons">Home Economics</a>
+                            <a href="#GenArtArt">General Art</a>
+                            <a href="#VisualArt">Visual Art</a>
+                            <a href="#Business">Business</a>
+                        </div>
+                    </li>
+                    <li class="activies">
+                        <a href="https://www.gogglemap.com" target="_blank">
+                            <button class="activies dropbtn">
+                                Visit Us
+                        </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="side right ">
+            <nav>
+                <ul class="MainPeople ">
+                    <li class="people "><a href="students.html"> Student</a></li>
+                    <li class="people "><a href="staff.html">Staff</a></li>
+                    <li class="people "><a href="Oldstudents.html">Old Student</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="center">
+            <div class="slide">
+                <div class="sliders">
+                    <img src="../image/slide/slide_1.jpg" alt="" class="slideImage">
+                    <div class="slideCaptions">
+                        Fist call 1111
+                    </div>
+                </div>
+
+                <div class="sliders">
+                    <img src="../image/slide/slide_2.jpg" alt="" class="slideImage">
+                    <div class="slideCaptions">
+                        Fist call 222
+                    </div>
+                </div>
+
+                <div class="sliders">
+                    <img src="../image/slide/slide_3.jpg" alt="" class="slideImage">
+                    <div class="slideCaptions">
+                        Fist call 333
+                    </div>
+                </div>
+
+                <div class="sliders">
+                    <img src="../image/slide/slide_4.jpg" alt="" class="slideImage">
+                    <div class="slideCaptions">
+                        Fist call 4444
+                    </div>
+                </div>
+
+                <div class="sliders">
+                    <img src="../image/slide/slide_5.jpg" alt="" class="slideImage">
+                    <div class="slideCaptions">
+                        Fist call 5555
+                    </div>
+                </div>
+
+                <div class="sliders">
+                    <img src="../image/slide/slide_6.jpg" alt="" class="slideImage">
+                    <div class="slideCaptions">
+                        Fist call 66666
+                    </div>
+                </div>
+            </div>
+            <button class="slideButton slideButtonLeft" onclick="plusDivs(-1)">&#10096;</button>
+            <button class="slideButton slideButtonRight" onclick="plusDivs(+1)">&#10095;</button>
+
+            <br><br>
+            <!--<br><br> -->
+            <div class="info">
+                <h2>
+                    Akwamumam Senior High School
+                </h2>
+                <p>Akwamumam Senior High School is a premier educational institution located in Akwamu in the Eastern Region, Ghana. It is one of the oldest and most respected schools in the country, having been established in 1955. The school has a reputation
+                    for excellence, rigorous curriculum that focuses on academic achievement and personal development. The school boasts a diverse student population, with students from all over Ghana and abroad. The school's mission is to empower students
+                    to become lifelong learners and responsible citizens by providing them with a quality education. The school provides a a supportive environment that promotes learning, respect, and collaboration. The school offers a wide range of extracurricular
+                    activities, including music, sports, and clubs, which foster creativity, teamwork, and leadership. Akwamuman Senior High School is committed to equipping its students with the knowledge and skills to succeed in their future endeavors.
+                    In short, Akwamuman Senior High School is an institution where students can learn and grow in a safe and nurturing environment. The school is predominantly a boarding school having facilities for both boys and girls. The facilities
+                    available are not adequate and over utilized. And also provides day facilities for those in the vicinity who would want to be day students. The vision statement of Akwamuman Senior High School, Akosombo, is “To build a reputable school
+                    that will produce students of high caliber who will be useful to themselves, their families and the nation’’.
+
+                    <h4>Mission statement is to:</h4>
+                    <ul>
+                        <li>Train students to acquire academic excellence in their various programmes, principally with the aim of entering tertiary institutions;</li>
+                        <li>Produce disciplined students who shall be imbued with a high sense of responsibility;</li>
+                        <li>Uphold the school’s motto “Discipline and Knowledge’’ in their quest to face the realities of life, and</li>
+                        <li>Work and serve the nation as best as they can.</li>
+                    </ul>
+                </p>
+                <br>
+                <h2>
+                    History
+                </h2>
+                <p>
+                    The school was named Akwamumam by the chief of Akwamu Traditional area, late Odeneho Kwafo Akoto II in 1969 with the help of other traditional leaders. In January, 1972, it was absorbed into the public education system. Located at New Powm, about 1km
+                    from Atimpoku.
+                </p>
+                <h4>SCHOOL CREST AND MOTTO</h4>
+                <p>The School Crest had been thoughtfully carved out to depict a picturesque from the ideas of the school. The Adomi Bridge and the Volta River beneath the bridge depict the locale of the school, which can be found about six hundred (600)
+                    meters from the Adomi Bridge, which is the heart of the Akwamu State. The opened book with lighted torch depicts knowledge that students are to acquire through assiduously applying themselves to their books. The two lions holding aloft
+                    the lighted torch depicts an aspects of Akwamu History, that is, ‘bravery’ which had made the school to earn the accolade “GREAT AKWAMUSEC’’ SCHOOL MOTTO The school’s motto is DISCIPLINE AND KNOWLEDGE.
+
+                </p>
+                <br>
+                <h2>
+                    Facilties
+                </h2>
+                <p>
+                    The school has many facilities thay help the students to learn. It has about fifty(50) Classroom, one Library, one Science Laboratory, two Computer Laboratory, two Farmland, one Medical Care centre (called the 'sickbase'), a Telephone Facility for both
+                    MTN and Vodafone, its also have a Dining Hall and a Centeen for both broading and day students. The school has a football field, a volley ball pitch, basket ball pitch and parks with garden- chairs for relaxation.
+                </p>
+                <br>
+                <h2>
+                    Courses
+                </h2>
+                <p>
+                    Akwamumam Senior High School provides courses which helps students major in their field.
+                    <h3>They provide courses like:</h3>
+                    <ul>
+                        <li>General Science: Physics, Chemistry, Biology, Elective Mathematics, Elective ICT</li>
+                        <li>Home Economics: General Knowledge in Art, Management in Living, Foods and Nutrition, Biology</li>
+                        <li>Business (Accounting Option): Business Management, Business Mathematics & Principles of Costing, Principles of Accounting, Elective Mathematics, Economics</li>
+                        <li>General Arts: Literature in English, Economics, History, Government, Elective ICT, Elective Mathematics, French, Christian Religious Studies, Geography</li>
+                        <li>Visual Arts: General Knowledge in Art, Graphic Design, Ceramics, Elective Mathematics, Economics</li>
+                    </ul>
+                </p>
+                <h3 id="Science">
+                    General Science
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat
+                    <img src="../image/activities/bird_branch_sit_81701_2560x1080.jpg" alt="" class="imgInText GenScienceText"> saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi
+                    officia deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque
+                    officia praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus
+                    necessitatibus vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil
+                    tenetur beatae quis. Suscipit provident vel
+
+                </p>
+                <h3 id="HomEcons">
+                    Home Economics
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto
+                    <img src="../image/activities/bird_duck_flight_blurred_51218_1600x900.jpg" alt="" class="imgInText HomEconsText"> beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+
+                <h3 id="Business">
+                    Business
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat saepe ea itaque
+                    <img src="../image/activities/bird_eagle_predator_160859_2560x1080.jpg" alt="" class="imgInText GenArtText"> beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti. iusto
+                    beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus
+                    ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum
+                    dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit
+                    perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae quis. Suscipit provident vel
+
+                </p>
+
+                <h3 id="GenArtArt">
+                    General Art
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat saepe ea itaque
+                    <img src="../image/activities/bird_eagle_predator_160859_2560x1080.jpg" alt="" class="imgInText GenArtText"> beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti. iusto
+                    beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus
+                    ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum
+                    dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit
+                    perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae quis. Suscipit provident vel
+
+                </p>
+                <h3 id="VisualArt">
+                    Virual Art
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis
+                    <img src="../image/activities/bird_flapping_wings_106640_3840x2400.jpg" alt="" class="imgInText VirArtText"> nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores
+                    quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <br>
+                <h2>
+                    Activities
+                </h2>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias
+                    <img src="../image/activities/bird_silhouette_sun_sea_sky_117207_2560x1080.jpg" alt="" class="imgInText activiesText">quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat.
+                    Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente
+                    commodi officia deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat
+                    a eaque officia praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi
+                    accusamus necessitatibus vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla
+                    aliquam nihil tenetur beatae quis. Suscipit provident vel
+
+                </p>
+                <h3 id="ClassSession">
+                    Class Session
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum,
+                    <img src="../image/activities/bird_eagle_predator_160859_2560x1080.jpg" alt="" class="imgInText ClassSeessionText"> deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime,
+                    soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti. Alias ipsa doloribus
+                    assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium pariatur? In maiores
+                    id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel! Fuga. Quasi itaque
+                    facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae quis. Suscipit provident
+                    vel
+
+                </p>
+                <h3 id="Sport">
+                    Sport
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae
+                    <img src="../image/activities/bird_flapping_wings_106640_3840x2400.jpg" alt="" class="imgInText SportText"> blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam
+                    dolores quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h3 id="AfterClass">
+                    After Class Activities
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat saepe ea
+                    <img src="../image/activities/bird_silhouette_sun_sea_sky_117207_2560x1080.jpg" alt="" class="imgInText AfterClass"> itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi
+                    officia deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque
+                    officia praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus
+                    necessitatibus vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil
+                    tenetur beatae quis. Suscipit provident vel
+
+                </p>
+                <br>
+                <h2>
+                    Clubs
+                </h2>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias
+                    <img src="../image/activities/bird_waves_sea_horizon_wings_85424_1920x1080.jpg" alt="" class="imgInText ClubText"> quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam
+                    quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi
+                    officia deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque
+                    officia praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus
+                    necessitatibus vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil
+                    tenetur beatae quis. Suscipit provident vel
+
+                </p>
+                <h3 id="Drama">
+                    Drama Club
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias
+                    <img src="../image/activities/bird_yellow_branch_210515_3840x2160.jpg" alt="" class="imgInText DramaText"> quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam
+                    dolores quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+
+                <h3 id="Cadet">
+                    Cadet Club
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat
+                    <img src="../image/activities/astronaut_space_gravity_157426_1280x720.jpg" alt="" class="imgInText CaclubText"> saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi
+                    officia deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque
+                    officia praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus
+                    necessitatibus vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil
+                    tenetur beatae quis. Suscipit provident vel
+
+                </p>
+                <h4>
+                    Cadet Crop
+                </h4>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat saepe
+                    <img src="../image/activities/audi_a4_audi_car_322918_1280x720.jpg" alt="" class="imgInText CacorpText"> ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h4>
+                    Cadet Band
+                </h4>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat saepe
+                    <img src="../image/activities/ball_baseball_closeup_142691_2560x1080.jpg" alt="" class="imgInText CabandText"> ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia
+                    deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia
+                    praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus
+                    vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h4>
+                    Red Cross
+                </h4>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat saepe ea
+                    <img src="../image/activities/bed_inscription_phrase_331055_3840x2400.jpg" alt="" class="imgInText redCrossText"> itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia
+                    deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia
+                    praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus
+                    vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <br>
+                <h3 id="NSMQ">
+                    National Science And Mathematics Quiz Club
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat
+                    <img src="../image/activities/astronaut_space_gravity_157426_1280x720.jpg" alt="" class="imgInText CaclubText"> saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi
+                    officia deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque
+                    officia praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus
+                    necessitatibus vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil
+                    tenetur beatae quis. Suscipit provident vel
+
+                </p>
+                <br>
+                <h3 id="Dance">
+                    Dance Crews
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam! Maxime, soluta et perspiciatis cupiditate
+                    assumenda eius fuga omnis deserunt fugiat
+                    <img src="../image/activities/astronaut_space_gravity_157426_1280x720.jpg" alt="" class="imgInText CaclubText"> saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi
+                    officia deleniti. Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque
+                    officia praesentium pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus
+                    necessitatibus vel! Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil
+                    tenetur beatae quis. Suscipit provident vel
+
+                </p>
+                <br>
+
+                <h2>
+                    Houses
+                </h2>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae
+                    <img src="../image/activities/bird_branch_sit_81701_2560x1080.jpg" alt="" class="imgInText Houses"> blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores
+                    quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h3 id="HuzOneBoys">
+                    House One (Boys)
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae
+                    <img src="../image/activities/bird_color_branch_sit_91637_2560x1080.jpg" alt="" class="imgInText HUS1BoyText"> blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam
+                    dolores quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h3 id="HuzOneGirls">
+                    House One (Girls)
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae
+                    <img src="../image/activities/bird_branch_sit_81701_2560x1080.jpg" alt="" class="imgInText HUS1GirlText"> blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam
+                    dolores quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h3 id="HuzTwoBoys">
+                    House Two (Boys)
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae
+
+                    <img src="../image/activities/bed_inscription_phrase_331055_3840x2400.jpg" alt="" class="imgInText HUS2BoyText"> blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam
+                    dolores quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h3 id="HuzTwoGirls">
+                    House Two (Girls)
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis
+                    <img src="../image/activities/bird_flapping_wings_106640_3840x2400.jpg" alt="" class="imgInText HUS2GirlText"> nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores
+                    quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h3 id="HuzThreeBoys">
+                    House Three (Boys)
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis
+                    <img src="../image/activities/bird_duck_flight_blurred_51218_1600x900.jpg" alt="" class="imgInText HUS3BoyText"> nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores
+                    quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h3 id="HuzThreeGirls">
+                    House Three (Girls)
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo earum
+                    <img src="../image/activities/bird_summer_color_cute_branch_26875_2560x1080.jpg" alt="" class="imgInText HUS3GirlText"> hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores
+                    quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h3 id="HuzFourBoys">
+                    House Four (Boys)
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae
+                    <img src="../image/activities/bird_color_branch_sit_91637_2560x1080.jpg" alt="" class="imgInText HUS4BoyText"> blanditiis nemo earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam
+                    dolores quam! Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti.
+                    Alias ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium
+                    pariatur? In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel!
+                    Fuga. Quasi itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae
+                    quis. Suscipit provident vel
+
+                </p>
+                <h3 id="HuzFourGirls">
+                    House Four (Girls)
+                </h3>
+                <p>
+                    harum repellat accusantium, minima facilis quod exercitationem quis aspernatur architecto blanditiis minus quos sunt vitae consequuntur quibusdam sit ex voluptatibus eum velit autem alias. A ex eveniet neque eos! Praesentium autem voluptatem officiis,
+                    earum amet dolorum reprehenderit, nostrum natus laborum fuga ipsam debitis! Iusto sequi modi recusandae! Excepturi esse voluptatem exercitationem deleniti eius obcaecati qui hic unde ad soluta? Dicta, reprehenderit aliquid asperiores
+                    sit quae, iure ratione nesciunt et deleniti neque molestiae, harum culpa! Ab, officia saepe corrupti quasi vero molestiae recusandae, aperiam quisquam nihil nisi dolorum dolorem fugiat. Perferendis, reprehenderit id praesentium magnam,
+                    laborum quis officia voluptatibus molestias quae blanditiis nemo
+                    <img src="../image/activities/bird_yellow_branch_210515_3840x2160.jpg" alt="" class="imgInText HUS4GirlText"> earum hic illum, deserunt qui quia deleniti dignissimos nulla saepe temporibus ipsa placeat. Aliquam quibusdam dolores quam!
+                    Maxime, soluta et perspiciatis cupiditate assumenda eius fuga omnis deserunt fugiat saepe ea itaque iusto beatae explicabo repellendus placeat ut velit sapiente mollitia non est aspernatur! Sapiente commodi officia deleniti. Alias
+                    ipsa doloribus assumenda, repellat minima debitis expedita necessitatibus ducimus perferendis ipsam delectus ex inventore quo magnam in architecto cupiditate molestiae laborum blanditiis? Nam, placeat a eaque officia praesentium pariatur?
+                    In maiores id nobis saepe dolorum aspernatur officia repellat illum, obcaecati, beatae quidem nostrum dolores excepturi consequatur animi doloribus harum dolore quam nam repudiandae eos commodi accusamus necessitatibus vel! Fuga. Quasi
+                    itaque facilis consequatur voluptate accusantium mollitia soluta odit ipsam cumque cum eos reprehenderit perferendis, nostrum at aut accusamus a earum illo. Necessitatibus, reiciendis nulla aliquam nihil tenetur beatae quis. Suscipit
+                    provident vel
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <b>Follow Us:</b> Facebook <i class="fab fa-facebook-f"></i><a href="facebook.com">@Ahenemaa</a> &nbsp;&nbsp;Twitter: <i class="fab fa-twitter"></i> <a href="twitter.com">@Ahenemaa</a> &nbsp;&nbsp; <i class="fab fa-email"></i>Email: <a href="mailto:akwamuman-senior-high@gmail.com">akwamuman-senior-high@gmail.com</a>            &nbsp;&nbsp; Contact us &#9742;: 0590000000
+        </div>
+        <div class="media_icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/home.js">
+</script>
+<script src="../javascript/script.js">
+</script>
+
+</html>
